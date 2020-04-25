@@ -6,7 +6,7 @@ logo.forEach(function(i){
   i.style.strokeDasharray = i.getTotalLength()+"px";
   i.style.strokeDashoffset = i.getTotalLength()+"px";
   i.style.animation = `line-anim 2s ease forwards ${1}s`;
-  setTimeout(function(){ window.location.href = "https://leiendrulat.github.io/LeiArkitectzEstate/index.htm"; }, 5000);
+  setTimeout(function(){ window.location.href = "https://leiendrulat.github.io/LeiArkitectzEstate/home.htm"; }, 5000);
   ;
 });
 
