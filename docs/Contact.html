@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="CSS.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .heading {
+      font-size: 25px;
+      margin: 0 auto;
+      width: 45%;
+    }
+
+    .fa {
+      font-size: 25px;
+    }
+
+    .checked {
+      color: orange;
+    }
+
+    /* Three column layout */
+    .side {
+      float: left;
+      width: 15%;
+      margin-top: 10px;
+    }
+
+    .middle {
+      margin-top: 10px;
+      float: left;
+      width: 70%;
+    }
+
+    /* Place text to the right */
+    .right {
+      text-align: right;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* The bar container */
+    .bar-container {
+      width: 100%;
+      background-color: #f1f1f1;
+      text-align: center;
+      color: white;
+    }
+
+    /* Individual bars */
+    .bar-5 {
+      width: 60%;
+      height: 18px;
+      background-color: #4CAF50;
+    }
+
+    .bar-4 {
+      width: 30%;
+      height: 18px;
+      background-color: #2196F3;
+    }
+
+    .bar-3 {
+      width: 10%;
+      height: 18px;
+      background-color: #00bcd4;
+    }
+
+    .bar-2 {
+      width: 4%;
+      height: 18px;
+      background-color: #ff9800;
+    }
+
+    .bar-1 {
+      width: 15%;
+      height: 18px;
+      background-color: #f44336;
+    }
+
+    /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+    @media (max-width: 400px) {
+
+      .side,
+      .middle {
+        width: 100%;
+      }
+
+      .right {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+ 
+    <div id="navbar">
+      <a href="#default" id="logo"></a>
+      <div id="navbar-right">
+        <a href="index.htm">Home</a>
+        <a href="#contact">Free Market Analysis</a>
+        <a href="info.html">Real Estate Consultation</a>
+        <a href="#default">New Property Listings</a>
+        <a href="calcs.htm">Mortgage Calculator</a>
+      </div>
+    </div>
+    <div style="margin-top:100px;padding:15px 15px 100px;font-size:30px">
+    </div>
+
+
+  </div>
+
+  <div class="container1">
+    <div style="text-align:center">
+      <h1>Contact Us</h1>
+    </div>
+    <hr>
+    <p align="center">We look forward to helping you. PLease add any comments below and we will respond with you
+      shortly.</p>
+    <div class="row1">
+      <div class="column1">
+        <img src="cont.jpg" style="width:100%">
+      </div>
+      <div class="column1">
+        <form action="webcourses@aol.com">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="email">Email Address</label>
+          <input type="text" placeholder="Email*" required>
+          <label for="Phone">Phone Number</label>
+          <input type="text" placeholder="Phone Number*" required>
+          <br>
+          <p align="center">How soon are you going to buy or sell?</p>
+          <select>
+            <option value="NS">Not Sure</option>
+            <option value="3">Within 3 Months</option>
+            <option value="6">Within 6 Months</option>
+            <option value="NW">Now</option>
+          </select>
+          <label for="comments">Comments and Any Suggestion so we can improve our services?</label>
+          <textarea id="comments" name="comments" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    <div class="space">&nbsp;</div>
+    <hr>
+    <h1 align="center">Feedbacks from our Clients:</h1>
+    <div class="flex-con">
+      <div class="pic"><img src="chef.png" class=" cup">Chef Ambrosio</div>
+      <div class="comment">Leigh, was awsome!. She negotiated a great price and was extremely helpful and knowledgeable about some not-so-great items we found during our inspection. And help us find the best house for us in our favorite location in town. </div>
+    </div>
+    <div class="space">&nbsp;</div>
+    <div class="space">&nbsp;</div>
+    <div class="space">&nbsp;</div>
+    <div class="space">&nbsp;</div>
+    <div class="space">&nbsp;</div>
+    <div class="space">&nbsp;</div>
+    <div class="flex-con">
+      <div class="pic"><img src="z.png" class=" cup"  width="20%">Engr. Zachary John</div>
+      <div class="comment">Direk as our agent is super patient, and always available for questions. We definitely recommend working with him!</div>
+    </div>
+    <div class="space">&nbsp;</div>
+    <div class="space">&nbsp;</div>
+    <div class="space">&nbsp;</div>
+    <div class="space">&nbsp;</div>
+    <div class="space">&nbsp;</div>
+    <div class="space">&nbsp;</div>
+    <div class="space">&nbsp;</div>
+    <div class="space">&nbsp;</div>
+    <div class="space">&nbsp;</div>
+    <div class="space">&nbsp;</div>
+    <div class="space">&nbsp;</div>
+    <div class="space">&nbsp;</div>
+    <hr>
+    <div class="flex-con1">
+    <span class="heading">User Rating</span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <p>4.1 average based on 254 reviews.</p>
+    <hr style="border:3px solid #f1f1f1">
+    <div class="row">
+      <div class="side">
+        <div>5 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-5"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>150</div>
+      </div>
+      <div class="side">
+        <div>4 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-4"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>63</div>
+      </div>
+      <div class="side">
+        <div>3 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-3"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>15</div>
+      </div>
+      <div class="side">
+        <div>2 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-2"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>6</div>
+      </div>
+      <div class="side">
+        <div>1 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-1"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>20</div>
+      </div>
+    </div>
+</div>
+<div class="space">&nbsp;</div>
+<hr>
+    <p>&copy LEndrulat</p>
+    <div class="space">&nbsp;</div>
+  <div class="navibar">
+    <a href="#news">News</a>
+    <a href="Contact.html" class="active">Contact</a>
+    <a href="#about">About</a>
+    <li style="float:right"><a href="https://goo.gl/maps/ntr1Hz7L4s1snYEaA">Office: 1600 E. Golf Avenue in Des
+        Plaines</a></li>
+  </div>
+
+
+  <script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.padding = "30px 10px";
+        document.getElementById("logo").style.fontSize = "25px";
+      } else {
+        document.getElementById("navbar").style.padding = "80px 10px";
+        document.getElementById("logo").style.fontSize = "35px";
+      }
+    }
+
+  </script>
+
+
+
+</body>
+
+</html>

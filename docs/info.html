@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leiarkitectz Real Estate</title>
+  <link rel="stylesheet" href="CSS.css">
+  <style>
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .column2 {
+      float: left;
+      width: 32%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column2 {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .container3 {
+      padding: 0 16px;
+    }
+
+    .container3::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: grey;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg2">
+    <div id="navbar">
+      <a href="#default" id="logo"></a>
+      <div id="navbar-right">
+        <a href="index.htm">Home</a>
+        <a href="#contact">Free Market Analysis</a>
+        <a href="#info" class="active">Real Estate Consultation</a>
+        <a href="property.htm">New Property Listings</a>
+        <a href="calcs.htm">Mortgage Calculator</a>
+      </div>
+    </div>
+    <div style="margin-top:200px;padding:15px 15px 500px;font-size:30px"></div>
+
+      <hr>
+      <h1 style="text-align: center;">Meet Our Team</h1>
+      <div class="space">&nbsp;</div>
+      <div class="row">
+        <div class="column2">
+          <div class="card">
+            <img src="team1.jpg" alt="Jane" style="width:100%">
+            <div class="container3">
+              <h2>Leigh En</h2>
+              <p class="title">CEO & Founder</p>
+              <p>Started the business as an Architectural Firm then expands into interior works an now build and
+                scheme.As an Architect she makes sure every buyers are contented in their choosen project. Every project
+                was design and build in accordance to the occupants needs.</p>
+              <p>leiarkitectz@yahoo.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="column2">
+          <div class="card">
+            <img src="team2.jpg" alt="Mike" style="width: 76%" align="center">
+            <div class="container3">
+              <h2>Mike Boss</h2>
+              <p class="title">Senior Agent & Designer</p>
+              <p>Mike brings ten years of experience in real estate, excellent customer service and a commitment to work
+                hard, listen and follow through. He provides quality service to build relationships with clients and
+                more importantly, maintain those relationships by communicating effectively.</p>
+              <p>example@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+        <div class="column2">
+          <div class="card">
+            <img src="team3.jpg" alt="John" style="width:128%" align="center">
+            <div class="container3">
+              <h2>Direk Gibs</h2>
+              <p class="title">Agent</p>
+              <p>As a newbie in the field, emphasizes the high-quality service he provides to clients. This excellent
+                service results in repeat customers and referrals.Direk include an impressive sales statistic, he
+                includes details about his prior experience in the army and about how he gives back to his community.
+              </p>
+              <p>example@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>&copy LEndrulat</p>
+      <div class="space">&nbsp;</div>
+      <div class="space">&nbsp;</div>
+      <div class="navibar">
+        <a href="#news">News</a>
+        <a href="Contact.html">Contact</a>
+        <a href="#about">About</a>
+        <li style="float:right"><a href="https://goo.gl/maps/ntr1Hz7L4s1snYEaA">Office: 1600 E. Golf Avenue in Des
+            Plaines</a></li>
+      </div>
+
+
+      <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.padding = "30px 10px";
+            document.getElementById("logo").style.fontSize = "25px";
+          } else {
+            document.getElementById("navbar").style.padding = "80px 10px";
+            document.getElementById("logo").style.fontSize = "35px";
+          }
+        }
+
+      </script>
+</body>
+
+</html>

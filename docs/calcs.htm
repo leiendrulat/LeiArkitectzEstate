@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leiarkitectz Real Estate</title>
+  <link rel="stylesheet" href="CSS.css">
+  <link href='https://fonts.googleapis.com/css?family=Beth Ellen' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="bg">
+    <div id="navbar">
+      <a href="#default" id="logo"></a>
+      <div id="navbar-right">
+        <a href="index.htm">Home</a>
+        <a href="#contact">Free Market Analysis</a>
+        <a href="info.html">Real Estate Consultation</a>
+        <a href="property.htm">New Property Listings</a>
+        <a href="#default" class="active">Mortgage Calculator</a>
+      </div>
+    </div>
+    <div style="margin-top:200px;padding:15px 15px 400px;font-size:30px">
+      <div class="say">"Buying real estate is not only the best way, the quickest way, the safetest way,
+        but the only way to become wealthy." - <b>Marshall Fields</b></div>
+      
+      
+     
+      </div>
+    </div>
+    <hr>
+
+    <script>   
+      /*1 script tag
+      2 find-out the values of the var
+      3 pseudo code (loan*(rate/10))x term
+      4 write a statement a form
+      //Est. Monthly Payment: $1,651
+Does not include any taxes or fees.
+Please consult a financial professional.
+
+      */
+
+function one(){
+      var loan = document.getElementById("loan").value;
+      var rate = document.getElementById("rate").value/1200;
+      var term = document.getElementById("term").value*12;
+
+
+      var final = loan * rate / (1 - (Math.pow(1/(1 + rate), term)));
+      document.getElementById("total").innerHTML = "$ " +Math.ceil(final) + "&nbsp;&nbsp;&nbsp;" + "Estimated Monthly Payment";
+    }
+ 
+    </script>
+
+    <h1 align="center">Mortgage Calculator</h1>
+    <div class="space">&nbsp;</div>
+    <div class="cal">
+    <form action="">
+      <label for="Loan">Amount of Loan</label>
+      <input type="text" id="loan" placeholder="Loan">
+      <br><br>
+      <label for="Rate">Annual Interest Rate</label>
+      <input type="text" id="rate" placeholder="Rate">
+      <br><br>
+      <label for="Term">Term of Loan</label> 
+      <input type="text" id="term" placeholder="Term  in Years">
+      <br><br>
+      <input type="Calculate" value="Calculate" onclick="one()">
+      
+    </form>
+    <h3  id= "total"></h3>
+<p>Does not include any taxes or fees.
+  Please consult a financial professional.</p>
+  </div>
+  <div class="space">&nbsp;</div>
+  <p>&copy LEndrulat</p>
+    <div class="space">&nbsp;</div>
+
+
+
+    <div class="navibar">
+      <a href="#news">News</a>
+      <a href="Contact.html">Contact</a>
+      <a href="#about">About</a>
+      <li style="float:right"><a href="https://goo.gl/maps/ntr1Hz7L4s1snYEaA">Office: 1600 E. Golf Avenue in Des
+          Plaines</a></li>
+    </div>
+
+    <div class="main">
+
+    </div>
+    <script>
+      // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          document.getElementById("navbar").style.padding = "30px 10px";
+          document.getElementById("logo").style.fontSize = "25px";
+        } else {
+          document.getElementById("navbar").style.padding = "80px 10px";
+          document.getElementById("logo").style.fontSize = "35px";
+        }
+      }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leiarkitectz Real Estate</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS.css">
+  <link href='https://fonts.googleapis.com/css?family=Beth Ellen' rel='stylesheet'>
+</head>
+<style>
+  input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+</style>
+<body>
+  <div class="bg">
+    <div id="navbar">
+      <a href="#default" id="logo"></a>
+      <div id="navbar-right">
+        <a class="active" href="#home">Home</a>
+        <a href="#contact">Free Market Analysis</a>
+        <a href="info.html">Real Estate Consultation</a>
+        <a href="property.htm">New Property Listings</a>
+        <a href="calcs.htm">Mortgage Calculator</a>
+      </div>
+    </div>
+    <div style="margin-top:210px;padding:15px 15px 2500px;font-size:30px">
+      <div class="say">"Real Estate cannot be Lost or Stolen, nor can it be carried away.
+        Purchase with common sense, Paid for in Full, and Managed in reasonable care, It is about the safest Investment in the World" - <b>Franklin Roosevelt</b></div>
+    </div>
+  </div>
+  <hr>
+  <h1 style="text-align: center;">New Chicago <a href="property.htm">Listings</a></h1>
+  <br>
+  <!-- The four columns -->
+  <div class="row">
+    <div class="column">
+      <img src="of.jpg" style="width:100%" onclick="myFunction(this);">
+      <p><b>Office:</b>Be amazed of this new office with an Area 2000sq.ft located in the heart of the city. With a lakeview that gives you peace and sirene. </p>
+    </div>
+    <div class="column">
+      <img src="apt.jpg" style="width:100%" onclick="myFunction(this);">
+      <p><b>Condo Unit:</b>This condo unit could be yours, a single pad size 800sq.ft. Single bed and bath, for single or newlywed couple just wanted to have a new fresh start.</p>
+    </div>
+    <div class="column">
+      <img src="b3.jpg" style="width:100%" onclick="myFunction(this);">
+      <p><b>Office Pad for Rent:</b>This Two leveled Office pad with an Area of 25000sq.ft with complete facilities and amenities, is an excelent location for a middle-size business.</p>
+    </div>
+    <div class="column">
+      <img src="b4.jpg" style="width:100%" onclick="myFunction(this);">
+      <p><b>Condo Unit on a Penthouse</b>Is Perfect for a bachelor, whos looking for a fabulous top floor 1 bedroom condo in a highly desired location in the South Loop! Relax and grill out on the balcony that has great views of the Chicago skyline. </p>
+    </div>
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
+    </div>
+    <br><br>
+    <hr>
+    <h1 align="center">Mortgage<a href="calcs.htm"> Calculator</a></h1>
+    <div class="space">&nbsp;</div>
+    <hr>
+    <div class="space">&nbsp;</div>
+    <h1 align="center">Meet our <a href="info.html"> Team</a></h1>
+    <p align="center">We value our clients as you value your property. And want to help you find your perfect place. Please reach out if you have any questions at all. We’d love to talk with you!</p>
+    <div class="row">
+      <div class="column2">
+        <img src="team1.jpg" style="width:65% ; border-radius: 50%">
+        <H2 align="center">Architect Leigh En</H2>
+      </div>
+      <div class="column2">
+        <img src="team2.jpg" style="width:65% ; border-radius: 50%">
+        <H2 align="center">Mike Boss</H2>
+      </div>
+      <div class="column2">
+        <img src="team3.jpg" alt="Jane" style="width:65% ; border-radius: 50%">
+        <H2 align="center">Direk Gibs</H2>
+      </div>
+</div>
+    <hr>
+    <div class="flex-con2">
+    <div class="pic1"><img src="hloan.jpg" style="width:100%"></div>
+    <div class="pic2"><h2> Need A House Loan?</h2>
+      <p>Find a lender who can offer competitive mortgage rates and help you with pre-approval.</p>
+      <button><h3>Get Pre-Approved Now!</h3></button>
+   </div>
+  </div>
+  <div class="space">&nbsp;</div>
+  <hr>
+   <div class="space">&nbsp;</div>
+   <div class="flex-con2">
+    <div class="pic5"><h2>Find Your Neighborhood</h2>
+      <p>Does it have pet-friendly rentals? What are the crime rates? How are the schools? Get important local information on the area you're most interested in.</p>
+      <form>
+        <input type="text" name="search" placeholder="Search..">
+      </form>
+    </div>
+    <div class="pic3"><img src="nb.jpg" style="width:100%"></div>
+  
+</div>
+  <div class="space">&nbsp;</div>
+  
+    <p>&copy LEndrulat</p>
+    <div class="navibar">
+      <a href="#news">News</a>
+      <a href="Contact.html">Contact</a>
+      <a href="#about">About</a>
+      <li style="float:right"><a href="https://goo.gl/maps/ntr1Hz7L4s1snYEaA">Office: 1600 E. Golf Avenue in Des
+          Plaines</a></li>
+    </div>
+
+    <div class="main">
+
+    </div>
+    <script>
+      // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          document.getElementById("navbar").style.padding = "30px 10px";
+          document.getElementById("logo").style.fontSize = "25px";
+        } else {
+          document.getElementById("navbar").style.padding = "80px 10px";
+          document.getElementById("logo").style.fontSize = "35px";
+        }
+      }
+
+    </script>
+
+    <script>
+      // Tab image Gallery
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+    </script>
+
+
+
+</body>
+
+</html>
